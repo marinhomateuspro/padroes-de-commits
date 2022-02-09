@@ -30,6 +30,10 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 - `chore` - Commits do tipo chore indicam atualizações de tarefas de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
 
+## 🧭 Issue Referente
+
+- Na mensagem de commit aplicr o sufixo para referenciarmos a issue aberta através do `'...: ref issue #00'`, sendo *00* substituido pelo número da issue.
+
 ## 🌗 Estágio
 
 - `partial` - Commits do tipo partial são utilizados quando são realizadas alterações parciais dentro da branch utilizada que ja carregam uma quantidade relevante de modificações.
@@ -62,7 +66,7 @@ git add . # para adicionar todos os arquivos editados
 git add arquivo.py # para adicionar somente o arquivo desejado
 ```
 
-- Realizar um 'save' das edições armazenadas no staging area através do git commit **atendendo aos padrões de commits** e realizar um push no repositório remoto:
+- Realizar um 'save' das edições armazenadas no staging area através do git commit **atendendo aos padrões de commits** e utilizando o sufixo e realizar um push no repositório remoto:
 
 ```bash
 git commit -m 'feat (campo-novo): ref issue #93 - final'

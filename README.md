@@ -1,5 +1,5 @@
 <h1 align="center">
-📄<br>Padrões de commits 
+📄<br>Padrões de commits - Prometeon BR
 </h1>
 
 <h1 align="center">
@@ -7,19 +7,10 @@
 </h1>
 
 <p>
-  De acordo com a documentação do <strong>Convetional Commits</strong>, Commits Semânticos são uma convenção simples para ser utilizada nas mensagens de commit. Essa convenção define  um conjunto de regras para criar um histórico de commit explícito, o que facilita a criação de ferramentas automatizadas.
+  Este repositório foi criado com base no repositório do user <a href="https://github.com/iuricode">@iuricode</a> e busca padronizar o commits e o sugerir um workflow aos colaboradores que utilizam as ferramentas Git e Github dentro da empresa.
 </p>
 
-<p>
-  Esses commits auxiliarão você e sua equipe a entenderem de forma facilitada quais alterações foram realizadas no trecho de código que foi commitado.
-</p>
-
-<p>
-  Essa identificação ocorre por meio de uma palavra e emoji que identifica se aquele commit realizado se trata de uma alteração de código, atualização de pacotes, documentação, alteração de visual, teste...
-</p>
-
-
-## 🦄 Tipo e Descrição
+## ⌨️ Tipo e Descrição
 
 O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
@@ -39,111 +30,47 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 - `chore` - Commits do tipo chore indicam atualizações de tarefas de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
 
+## 🌗 Estágio
 
-## 🎉 Recomendações
+- `partial` - Commits do tipo partial são utilizados quando são realizadas alterações parciais dentro da branch utilizada que ja carregam uma quantidade relevante de modificações.
 
-- Adicione um título consistente com o título do conteúdo;
-- Recomendamos que na primeira linha deve ter no máximo 4 palavras;
-- Para descrever com detalhes, usar a descrição do commit;
-- Usar um emoji no início da mensagem de commit representando sobre o commit;
-- Um link precisa ser adicionado em sua forma mais autêntica, ou seja: sem encurtadores de link e links afiliados;
+- `final` - Commits do tipo final indicam que a issue ja foi completamente resolvida e que esta é a versão final para ser realizada um merge junto à branch _master_.
 
-## 💻 Exemplo
+## 🪜 Passo a passo
+
+<p>
+  Após a abertura da issue pelo admin do projeto, em seu ambiente de trabalho seguir os seguintes comandos (exemplo campo novo no app):
+</p>
+
+- Acessar a branch principal do repositório (geralmente **master** ou **main**) e importar os dados mais recentes do repositório remoto:
+
 ```bash
-git commit -m ":tada: Meu primeiro commit"
+git checkout master
+git pull master
 ```
 
-## 💈 Padrões de emojis
+- Em seguida criar uma nova branch com o tipo de tarefa a ser realizada e o nome da tarefa:
 
-<table>
-  <thead>
-    <tr>
-      <th>Tipo de commit</th>
-      <th>Emojis</th>
-    </tr>
-  </thead>
- <tbody>
-    <tr>
-      <td>Commit inicial</td>
-      <td> 🎉 <code>:tada:</code>   </td>
-    </tr>
-    <tr>
-      <td> Tag de versão  </td>
-      <td> 🔖 <code>:bookmark:</code>   </td>
-    </tr>
-    <tr>
-      <td>  Novo recurso   </td>
-      <td> ✨ <code>:sparkles:</code>   </td>
-    </tr>
-    <tr>
-      <td>  Lista de ideias (tasks)    </td>
-      <td> 🔜 <code> :soon: </code>   </td>
-    </tr>
-    <tr>
-      <td>  Bugfix  </td>
-      <td> 🐛 <code>:bug:</code>   </td>
-    </tr>
-    <tr>
-      <td>  Documentação  </td>
-      <td> 📚 <code>:books:</code>   </td>
-    </tr>
-    <tr>
-      <td>  Testes  </td>
-      <td> 🧪 <code>:test_tube: </code>   </td>
-    </tr>
-    <tr>
-      <td>Adicionando um teste</td>
-      <td> ✅ <code> :white_check_mark: </code>   </td>
-    </tr>
-    <tr>
-      <td> Teste de aprovação </td>
-      <td> ✔️ <code> :heavy_check_mark: </code>   </td>
-    </tr>
-    <tr>
-      <td>  Acessibilidade    </td>
-      <td> ♿ <code> :wheelchair: </code>   </td>
-    </tr>
-    <tr>
-      <td>  Texto     </td>
-      <td> 📝 <code> :pencil: </code>   </td>
-    </tr>
-    <tr>
-      <td>  Package.json em JS      </td>
-      <td> 📦 <code> :package: </code>   </td>
-    </tr>
-    <tr>
-      <td>  Em progresso        </td>
-      <td> 🚧 <code> :construction: </code>   </td>
-    </tr>
-    <tr>
-      <td>   Arquivos de configuração        </td>
-      <td> 🔧 <code> :wrench: </code>   </td>
-    </tr>
-    <tr>
-      <td>   Removendo uma dependência        </td>
-      <td> ➖ <code> :heavy_minus_sign: </code>   </td>
-    </tr>
-    <tr>
-      <td>   Adicionando uma dependência        </td>
-      <td> ➕ <code> :heavy_plus_sign: </code>   </td>
-    </tr>
-    <tr>
-      <td>   Revertendo mudanças         </td>
-      <td> 💥 <code> :boom: </code>   </td>
-    </tr>
-    <tr>
-      <td>   Alterações de revisão de código        </td>
-      <td> 👌 <code> :ok_hand: </code>   </td>
-    </tr>
-   <tr>
-      <td>   Refatoração        </td>
-      <td> ♻️ <code> :recycle: </code>   </td>
-   </tr>
-    <tr>
-      <td>   Mover/Renomear        </td>
-      <td> 🚚 <code> :truck: </code>   </td>
-    </tr>
-  </tbody>
-</table>
+```bash
+git checkout -b feat/campo-novo
+```
+
+- Apos concluir a tarefa ou a etapa, adicionar os arquivos editados para a staging area:
+
+```bash
+git add . # para adicionar todos os arquivos editados
+git add arquivo.py # para adicionar somente o arquivo desejado
+```
+
+- Realizar um 'save' das edições armazenadas no staging area através do git commit **atendendo aos padrões de commits** e realizar um push no repositório remoto:
+
+```bash
+git commit -m 'feat (campo-novo): ref issue #93 - final'
+git push
+```
+
+## 💻 Pull Request
+
+- Após realizar o push no repositório remoto, solicitar um pull request dentro do Github selecionando a branch principal e a branch referente a issue solucionada e aguardar a aprovação do admin do projeto.
 
 <br>[⬆ Voltar ao top](#padrões-de-commits-) <br>

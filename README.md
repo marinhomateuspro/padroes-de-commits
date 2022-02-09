@@ -32,7 +32,7 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 ## 🧭 Issue Referente
 
-- Na mensagem de commit aplicr o sufixo para referenciarmos a issue aberta através do `'...: ref issue #00'`, sendo *00* substituido pelo número da issue.
+- Aplicar o sufixo `'...: ref issue #00'` para referenciarmos a issue aberta através da mensagem de commit, sendo _00_ substituido pelo número da issue.
 
 ## 🌗 Estágio
 

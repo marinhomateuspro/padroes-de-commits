@@ -1,6 +1,12 @@
 <h1 align="center">
-📄<br>Padrões de commits - Prometeon BR
+📄<br>Semantic Commits Patterns - Prometeon BR
 </h1>
+
+<h4 align="center">
+  <a href="https://github.com/marinhomateuspro/padroes-de-commits/blob/main/README_EN.md">
+    English Version 
+  </a>
+</h4>
 
 <h1 align="center">
   <img src="gitcommit.png">
@@ -66,7 +72,7 @@ git add . # para adicionar todos os arquivos editados
 git add arquivo.py # para adicionar somente o arquivo desejado
 ```
 
-- Realizar um 'save' das edições armazenadas no staging area através do git commit **atendendo aos padrões de commits** e utilizando o sufixo e realizar um push no repositório remoto:
+- Realizar um 'save' das edições armazenadas no staging area através do git commit **atendendo aos padrões de commits** e utilizando o sufixo, em seguida realizar um push no repositório remoto:
 
 ```bash
 git commit -m 'feat (campo-novo): ref issue #93 - final'
